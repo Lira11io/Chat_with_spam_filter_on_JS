@@ -1,0 +1,131 @@
+.root {
+  margin-left: 15px;
+}
+
+/*Стили для практического задания*/
+/*Обертка для сервиса*/
+.service {
+  background-color: rgb(9, 9, 66);
+  width: 85%;
+  padding: 3rem;
+  color: aliceblue;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/*Заголовок сервиса*/
+.service__title {
+  font-size: 22px;
+}
+
+/*Обертка для сервиса*/
+.service__blok {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+/*Подзаголовки сервиса*/
+.service__subtitle_text {
+  color: rgb(13, 212, 212);
+  font-size: 18px;
+}
+
+/*Обертка для кнопок выбора*/
+.service__check {
+  margin-bottom: 30px;
+  font-size: 11px;
+  max-width: 68%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Кнопки выбора отображения имени*/
+.service__check_yes,
+.service__check_no {
+  appearance: none;
+  border-radius: 2%;
+  width: 16px;
+  height: 16px;
+  border: 1.5px dashed rgb(13, 212, 212);
+  background: transparent;
+}
+
+/*Кнопки выбора отображения имени в активном состоянии*/
+.service__check_yes:checked,
+.service__check_no:checked {
+  background: rgb(13, 212, 212);
+}
+
+/*Обертка для полей ввода*/
+.service__input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*Поля ввода*/
+.service__input_fio,
+.service__input_avatar,
+.service__input_comment {
+  border: 1.5px dashed rgb(13, 212, 212);
+  background: transparent;
+  margin-bottom: 25px;
+  width: 93%;
+  color: rgb(221, 201, 176);
+}
+
+/*свойства отображаемого текста в полях ввода по умолчанию*/
+.service__input_fio::placeholder,
+.service__input_avatar::placeholder,
+.service__input_comment::placeholder {
+  color: rgba(240, 248, 255, 0.438);
+  font-size: 11px;
+}
+
+/*Поле ввода комментария*/
+.service__input_comment {
+  min-height: 200px;
+  vertical-align: top;
+}
+
+/*Кнопка "отправить"*/
+.service__input_button {
+  background-color: rgb(13, 212, 212);
+  border: none;
+  padding: 8px;
+  color: aliceblue;
+}
+
+/*Обертка полей чата*/
+.service__subtitle_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Аватар пользователя в чате*/
+.service__subtitle_foto {
+  min-height: 100px;
+  margin-right: 5px;
+}
+
+/*Размеры загруженного пользователем аватара*/
+.service__img {
+  width: 50px;
+}
+
+/*Дата создания комментария в чате*/
+.service__subtitle_date {
+  font-size: 10px;
+  margin-left: auto;
+}
+
+/*Текст комментария в чате*/
+.service__subtitle_comment {
+  background: transparent;
+  max-height: 200px;
+  width: 90%;
+  border: none;
+}
